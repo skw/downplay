@@ -1,4 +1,4 @@
-# downplay (1) language reference
+# \/ downplay (1) language reference
 
 Downplay borrows aspects from both Markdown, Textile, and Jade to derive a functional, but strict and clearly defined specification.
 
@@ -82,7 +82,35 @@ transpiles to:
 		<li>Three</li>
 	</ol>
 
-If numbers are used, order is dictated by numerals
+If numbers are used, order is dictated by numeral, such that:
+
+	2 Two
+	3 Three
+	1 One
+	
+still transpiles to:
+
+	<ol>
+		<li>One</li>
+		<li>Two</li>
+		<li>Three</li>
+	</ol>
+
+## definition lists
+
+definition lists in downplay are 
+
+	> Damon Albarn
+		: Vocals and rhythm guiter
+	> Graham Coxon
+		: lead guitar
+	
+	<dl>
+		<dt>Damon Albarn</dt>
+		<dd>Vocals and rhythm guitar</dd>
+		<dt>Graham Coxon</dt>
+		<dd>lead guitar</dd>
+	</dl>
 
 ## images
 

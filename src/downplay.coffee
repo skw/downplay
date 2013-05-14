@@ -14,6 +14,11 @@
 		#	ul:
 		# ol:
 		# image:
-		# 
+		# table:
+		# emphasis:
+		# strong:
 
 	sample = "h header\n p test"
+	
+	output = sample.replace header.grammer, "<h1>$1</h1>"
+	console.log output

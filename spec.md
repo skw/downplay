@@ -1,6 +1,8 @@
-# \/ downplay (1) language reference
+# \/ downplay 0.1 language specification
 
-Downplay borrows aspects from both Markdown, Textile, and Jade to derive a functional, but strict and clearly defined specification.
+A logicless markup language for minimalists. 
+
+Downplay borrows aspects from both Markdown, Textile, and Jade to derive a functional, but strict and clearly defined specification. It's a hyrbid microlang and logic-less markup language. Logic can easily be added with the addition of mustache templates.
 
 ## headers
 
@@ -109,7 +111,7 @@ definition lists in downplay are
 		<dt>Damon Albarn</dt>
 		<dd>Vocals and rhythm guitar</dd>
 		<dt>Graham Coxon</dt>
-		<dd>lead guitar</dd>
+		<dd>lead guitaraaa</dd>
 	</dl>
 
 ## images
@@ -128,7 +130,7 @@ transpiles to:
 
 ## tables
 
-Tables in downplay are not visual representations of table structures. Text-based visual representations of tables are painful to maintain and structure, so this table syntax is an attempt at a more human readable and maintainable structure. Drawing inspiration from Jade, hashes, and coffeescript, this is a 
+Tables in downplay are not visual representations of table structures. Text-based visual representations of tables are painful to maintain and structure, so this table syntax is an attempt at a more human readable and maintainable structure. Drawing inspiration from Jade, json, and cson. 
 
 	{
 	name
@@ -186,14 +188,29 @@ transpiles to:
 
 	<em>somewhat important</em>
 
-Note: There is no represenation of `<i>` and `<b>` as these are stylistic tags and these properties should be represented in style sheets.
+Note: There is no representation of `<i>` and `<b>` as these are stylistic tags and these properties should be represented in style sheets.
 
 ## comments
 
 	// this is a comment
-	\\
+	
+	/*
 	This is a comment block.
-	\\
+	*/
+
+## classes, IDs, and attributes
+
+Additional attributes can be added to any element
+
+## misc. elements
+
+## escaped code
+
+The singlequote (`'`) can be used to designate code that will be ignored by the downplay transpiler.
+
+eg:
+
+	'<span>What's HTML?</span>'
 
 
 ## variables and mustache template support
